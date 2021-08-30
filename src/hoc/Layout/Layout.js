@@ -21,6 +21,7 @@ class Layout extends Component {
                 { this.state.menu ? <Backdrop onClick={this.toggleMenuHandler}/> : null }
                 <Drawer
                     isOpen={this.state.menu}
+                    onToggle={this.toggleMenuHandler}
                 />
                 <MenuToggle
                     onToggle={this.toggleMenuHandler}
