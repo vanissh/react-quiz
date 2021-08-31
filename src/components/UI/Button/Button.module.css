@@ -2,7 +2,7 @@
     display: inline-block;
     padding: 10px 20px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: none;
     color: #000;
     margin-right: 15px;
     text-transform: uppercase;
@@ -13,10 +13,6 @@
 
 .Button:focus {
     outline: none;
-}
- 
-.Button:hover {
-
 }
 
 .Button:active, .Button:hover {
@@ -34,11 +30,11 @@
 }
 
 .Button.success {
-    background: rgba(161, 240, 69, 1);
+    background: rgb(255, 195, 218);
 }
 
 .Button.primary {
-    background: #3990fa;
+    background: #ab7aec;
     color: #fff;
 }
  

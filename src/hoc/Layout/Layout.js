@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classes from './Layout.module.css';
 import MenuToggle from '../../components/Navigation/MenuToggle/MenuToggle';
 import Drawer from '../../components/Navigation/Drawer/Drawer';
-import Backdrop from '../../components/UI/Button/Backdrop/Backdrop';
+import Backdrop from '../../components/UI/Backdrop/Backdrop';
 
 class Layout extends Component {
 
