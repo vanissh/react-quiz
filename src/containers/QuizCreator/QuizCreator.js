@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import classes from './QuizCreator.module.css'
 import Input from '../../components/UI/Input/Input'
 import Select from '../../components/UI/Select/Select'
@@ -112,9 +112,8 @@ class QuizCreator extends React.Component {
         return Object.keys(this.state.formControls).map((name, index)=> {
             const control = this.state.formControls[name]
             return (
-                <>
+                <Fragment key={name + index}>
                 <Input 
-                    key={name + index}
                     type={control.type}
                     label={control.label}
                     valid={control.valid}
@@ -125,7 +124,7 @@ class QuizCreator extends React.Component {
                     onChange={event => this.onChangeHandler(event.target.value, name)}
                 />
                 { index === 0 ? <hr/> : null}
-                </>
+                </Fragment>
             )
         })
     }
